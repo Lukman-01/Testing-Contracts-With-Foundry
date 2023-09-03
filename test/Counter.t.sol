@@ -7,19 +7,19 @@ import {Counter} from "../src/Counter.sol";
 contract CounterTest is Test {
     Counter public counter;
 
-    function setUp() public{
+    function setUp() public {
         counter = new Counter();
     }
 
-    function testInc() public{
+    function testInc() public {
         counter.inc();
-        assertEq(counter.count(),1);
+        assertEq(counter.count(), 1);
     }
 
-    function testDec() public{
+    function testDec() public {
         counter.inc();
         counter.inc();
         counter.dec();
-        assertEq(counter.count(),1);
+        assertEq(counter.count(), 1);
     }
 }

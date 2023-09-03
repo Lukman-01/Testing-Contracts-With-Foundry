@@ -10,6 +10,7 @@ contract HelloTest is Test {
     function setUp() public {
         hello = new Hello();
     }
+
     function testGreet() public {
         assertEq(hello.greet(), "Hello Everyone!");
     }
